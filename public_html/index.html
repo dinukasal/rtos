@@ -16,7 +16,7 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-        
+        <script src="js/jquery.min.js"></script>
     <h1>Real Time Operating Systems - Rate Monotonic Scheduling</h1>
     </head>
     <body>
@@ -36,30 +36,57 @@
             <th>Process</th>
             <th>Start Time</th>
             <th>Service Time</th>
+            <th>Priority</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
+            <td class="success">A</td>
+            <td>0</td>
             <td>@mdo</td>
           </tr>
           <tr>
             <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
+            <td class="info">B</td>
+            <td>5</td>
             <td>@fat</td>
           </tr>
           <tr>
             <th scope="row">3</th>
-            <td>Larry</td>
-            <td>the Bird</td>
+            <td class="warning">C</td>
+            <td>10</td>
+            <td>@twitter</td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>C</td>
+            <td>10</td>
             <td>@twitter</td>
           </tr>
         </tbody>
       </table>
     </div>
   </div>
+        <div style="position: absolute;left:5%">
+            <table border="2" id="prTable">
+                <tr>
+                    <td style="width:40px;height: 20px"></td>
+                    <td style="width:40px;height: 20px"></td>
+                </tr>
+                <tr>
+                    <td style="width:40px;height: 20px"></td>
+                    <td style="width:40px;height: 20px"></td>
+                </tr>
+                <tr>
+                    <td style="width:40px;height: 20px"></td>
+                    <td style="width:40px;height: 20px"></td>
+                </tr>
+            </table>
+        </div>
+            
     </body>
+    <script type="text/javascript">
+        $('#prTable tr:last').after('<tr><td>Dinuka</td></tr>');
+    </script>
 </html>
