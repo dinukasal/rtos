@@ -1,0 +1,46 @@
+#procTable{
+	overflow-y: auto;
+	max-height: 200px;
+	margin-bottom: 0;
+}
+
+#procTable th,
+#procTable td{
+	text-align: center;
+}
+
+#timingDiagram{
+	overflow-x:	scroll;
+}
+
+body{
+	color: #7D15A0;
+}
+
+#buttonset{
+	margin: 0 auto;
+	text-align: center;
+}
+
+#buttonset button{
+	margin-right: 5px;
+}
+
+.panel-default .panel-heading{
+	font-weight: bold;
+	color: #0C65A5;
+}
+
+#timingDiagram .table>tbody>tr>td, 
+#timingDiagram .table>tbody>tr>th, 
+#timingDiagram .table>tfoot>tr>td, 
+#timingDiagram .table>tfoot>tr>th, 
+#timingDiagram .table>thead>tr>td, 
+#timingDiagram .table>thead>tr>th{
+	padding: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    
+}
